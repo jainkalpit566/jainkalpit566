@@ -10,9 +10,9 @@ form.addEventListener('submit', (e) => {
 	e.preventDefault();
 	const userInput = codeInput.value.trim();
 	if (userInput === secretCode) {
-		resultDiv.innerHTML = 'Baby';
+		resultDiv.innerHTML = '';
 		window.location.href = nextPageUrl; // Redirect to new page
 	} else {
-		resultDiv.innerHTML = 'Naa Tu meri prajwal nahi hai';
+		resultDiv.innerHTML = 'Naa Tu meri bhootni nahi hai';
 	}
 });
